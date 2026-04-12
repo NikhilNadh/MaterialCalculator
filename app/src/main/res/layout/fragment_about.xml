@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <TextView
+            android:text="Material Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- About -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="About This App"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="This app calculates construction materials like cement, sand, and aggregate based on given dimensions. It uses standard mix ratios for accurate estimation."
+                android:textColor="#E5E7EB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Input Info -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Input Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="• Enter Length, Width, Height in meters (m)\n• Decimal values are allowed\n• Example: 2.5 m"
+                android:textColor="#E5E7EB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Usage -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Application Usage"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="• Used in construction planning\n• Helps estimate material requirements\n• Useful for civil engineering students"
+                android:textColor="#E5E7EB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Equations -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Equations Used"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Volume = Length × Width × Height\n\nMix Ratio = 1 : 1.5 : 3\n\nCement = (1 / 5.5) × Volume × 1440\nSand = (1.5 / 5.5) × Volume\nAggregate = (3 / 5.5) × Volume"
+                android:textColor="#E5E7EB"
+                android:lineSpacingExtra="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Developer -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#1E1E1E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Developer"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Rishi Akash"
+                android:textSize="16sp"
+                android:textColor="#E5E7EB"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/contactBtn"
+                android:text="Contact"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Material Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/length"
+            android:hint="Length"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9CA3AF"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/width"
+            android:hint="Width"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9CA3AF"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/height"
+            android:hint="Height"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9CA3AF"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/calcBtn"
+            android:text="CALCULATE"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Result Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#1E1E1E"
+            android:layout_marginTop="20dp"
+            android:elevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Calculation Result"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/result"
+                android:text="Results will appear here"
+                android:textSize="18sp"
+                android:textColor="#E5E7EB"
+                android:lineSpacingExtra="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
