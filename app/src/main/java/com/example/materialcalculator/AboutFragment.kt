@@ -20,7 +20,7 @@ class AboutFragment : Fragment() {
         val contactBtn = view.findViewById<Button>(R.id.contactBtn)
 
         contactBtn.setOnClickListener {
-            val url = "https://wa.me/+918590787700"
+            val url = "https://nikhil-nadh-s.netlify.app/"
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(intent)
         }

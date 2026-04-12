@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:text="Rishi Akash"
+                android:text="Nikhil Nadh S"
                 android:textSize="16sp"
                 android:textColor="#E5E7EB"
                 android:layout_marginBottom="12dp"
