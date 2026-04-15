@@ -31,10 +31,10 @@ This app is useful for:
 ## 📸 Screenshots
 
 ### Calculator Screen
-![Calculator](screenshots/calculator.png)
+<img src="screenshots/calculator.png" width="200"/>
 
 ### About Screen
-![About](screenshots/about.png)
+<img src="screenshots/about.png" width="200"/>
 
 
 ## 👨‍💻 Developer
