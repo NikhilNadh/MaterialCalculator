@@ -19,6 +19,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
+            android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -42,7 +43,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:text="This app calculates construction materials like cement, sand, and aggregate based on given dimensions. It uses standard mix ratios for accurate estimation."
+                android:text="This app calculates construction materials like cement, sand, and aggregate based on given dimensions using real-world dry volume calculations and standard mix ratios."
                 android:textColor="#E5E7EB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -68,7 +69,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:text="• Enter Length, Width, Height in meters (m)\n• Decimal values are allowed\n• Example: 2.5 m"
+                android:text="• Enter Length, Width, Height in meters (m)&#10;• Decimal values are allowed&#10;• Example: 2.5 m"
                 android:textColor="#E5E7EB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -94,14 +95,14 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:text="• Used in construction planning\n• Helps estimate material requirements\n• Useful for civil engineering students"
+                android:text="• Used in construction planning&#10;• Helps estimate material requirements&#10;• Useful for civil engineering students"
                 android:textColor="#E5E7EB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
-        <!-- Equations -->
+        <!-- Grades & Ratios -->
         <LinearLayout
             android:orientation="vertical"
             android:padding="16dp"
@@ -111,7 +112,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="Equations Used"
+                android:text="Concrete Grades &amp; Mix Ratios"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
@@ -120,9 +121,19 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:text="Volume = Length × Width × Height\n\nMix Ratio = 1 : 1.5 : 3\n\nCement = (1 / 5.5) × Volume × 1440\nSand = (1.5 / 5.5) × Volume\nAggregate = (3 / 5.5) × Volume"
+                android:text="M5   → 1 : 5 : 10&#10;M7.5 → 1 : 4 : 8&#10;M10  → 1 : 3 : 6&#10;M15  → 1 : 2 : 4&#10;M20  → 1 : 1.5 : 3&#10;M25  → 1 : 1 : 2"
                 android:textColor="#E5E7EB"
+                android:textSize="15sp"
+                android:fontFamily="monospace"
                 android:lineSpacingExtra="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="* Based on standard nominal mix design (IS practice)"
+                android:textColor="#9CA3AF"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -159,6 +170,7 @@
                 android:textColor="#FFFFFF"
                 android:background="@drawable/button_bg"
                 android:backgroundTint="@null"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

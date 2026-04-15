@@ -30,7 +30,7 @@ class CalculatorFragment : Fragment() {
         val gradeBtn = view.findViewById<Button>(R.id.gradeBtn)
         val result = view.findViewById<TextView>(R.id.result)
 
-        // 🎯 Grade Selection
+        // 🔵 Grade Selection
         gradeBtn.setOnClickListener {
 
             val grades = arrayOf(
@@ -60,7 +60,7 @@ class CalculatorFragment : Fragment() {
                 .show()
         }
 
-        // 🎯 Calculation
+        // 🔥 REAL-WORLD CALCULATION
         calcBtn.setOnClickListener {
 
             val l = length.text.toString().toDoubleOrNull()
@@ -72,21 +72,39 @@ class CalculatorFragment : Fragment() {
                 return@setOnClickListener
             }
 
-            val volume = l * w * h
+            val wetVolume = l * w * h
+            val dryVolume = wetVolume * 1.54
+
             val totalRatio = cementRatio + sandRatio + aggRatio
 
-            val cement = (cementRatio / totalRatio) * volume * 1440
-            val sand = (sandRatio / totalRatio) * volume
-            val aggregate = (aggRatio / totalRatio) * volume
+            val cementVolume = (cementRatio / totalRatio) * dryVolume
+            val sand = (sandRatio / totalRatio) * dryVolume
+            val aggregate = (aggRatio / totalRatio) * dryVolume
+
+            val cementWeight = cementVolume * 1440
+            val cementBags = cementVolume / 0.035
 
             result.text = """
-                Grade: $currentGrade
-                
-                Volume: %.2f m³
-                Cement: %.2f kg
-                Sand: %.2f m³
-                Aggregate: %.2f m³
-            """.trimIndent().format(volume, cement, sand, aggregate)
+            Grade : $currentGrade
+
+            Wet Volume : %.2f m³
+            Dry Volume : %.2f m³
+            Total Ratio : %.1f
+
+            Cement : %.2f m³
+            Sand   : %.2f m³
+            Aggregate : %.2f m³
+
+            Cement Bags : %.0f bags
+            """.trimIndent().format(
+                wetVolume,
+                dryVolume,
+                totalRatio,
+                cementVolume,
+                sand,
+                aggregate,
+                cementBags
+            )
         }
     }
 }
